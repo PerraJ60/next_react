@@ -7,6 +7,13 @@
   align-items: center;
 }
 
+.header {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #106b21;
+  color: white;
+}
+
 .main {
   padding: 5rem 0;
   flex: 1;
@@ -119,4 +126,25 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.left {
+  width: 25%;
+}
+.left > pre {
+  width: 90%;
+}
+.right {
+  width: 75%;
+}
+.oimage {
+  max-height: 90%;
+  width: 90%;
+  margin-right: 0;
 }
