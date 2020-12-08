@@ -14,3 +14,11 @@ export interface PositionInterface {
   location: string;
   achievements: string[];
 }
+export interface ProductInterface {
+  id: string;
+  name: string;
+  image: string;
+  type: string;
+  qty: string;
+  price: string;
+}

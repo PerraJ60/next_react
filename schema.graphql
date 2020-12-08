@@ -29,12 +29,22 @@ type Position {
   years: Int
 }
 
+type Product {
+  id: ID
+  image: String
+  name: String
+  price: String
+  qty: Int
+  type: String
+}
+
 type Query {
   bio: Bio
 
   """find position by Id"""
   position(id: ID): Position
   positions: [Position]
+  products: [Product]
 }
 
 """

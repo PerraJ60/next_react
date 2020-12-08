@@ -8,7 +8,7 @@
 }
 
 .header {
-  text-align: center;
+  text-align: left;
   padding: 2rem 0;
   background-color: #106b21;
   color: white;
@@ -147,4 +147,26 @@
   max-height: 90%;
   width: 90%;
   margin-right: 0;
+}
+.pimage {
+  max-height: 50%;
+  width: 50%;
+  margin-right: 0;
+}
+
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+ul.header {
+  background-color: #106b21;
+  padding: 0;
+}
+ul.header li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
 }

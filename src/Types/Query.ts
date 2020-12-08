@@ -1,6 +1,6 @@
 import { idArg, queryType } from '@nexus/schema';
 import { database } from 'src/database';
-import { Bio, Position } from './index';
+import { Bio, Position, Product } from './index';
 
 export const Query = queryType({
   definition(t) {
@@ -12,6 +12,11 @@ export const Query = queryType({
     t.list.field('positions', {
       type: Position,
       resolve: () => database.positions,
+    });
+
+    t.list.field('products', {
+      type: Product,
+      resolve: () => database.products,
     });
 
     // Option to search position by id

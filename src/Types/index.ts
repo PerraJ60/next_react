@@ -4,6 +4,7 @@ import { GraphQLDate, GraphQLURL } from 'graphql-scalars';
 export * from './Query';
 export * from './Bio';
 export * from './Position';
+export * from './Product';
 
 //Declarations for Nexus:
 export const GQLDate = decorateType(GraphQLDate, {

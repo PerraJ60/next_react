@@ -6,7 +6,6 @@ export const database = {
     github: 'https://github.com/PerraJ60',
     linkedin: 'https://www.linkedin.com/in/per-johansson-55823b108/',
   },
-
   positions: [
     {
       id: '1',
@@ -65,6 +64,80 @@ export const database = {
       achievements: [
         'Development of calculation software for electric installation costs in buildings.',
       ],
+    },
+  ],
+  products: [
+    {
+      id: '94200',
+      name: 'SSW Regular Tagging Gun',
+      image: 'images/products/94200.jpg',
+      type: 'tool',
+      qty: '5',
+      price: '$119.45',
+    },
+    {
+      id: '94201',
+      name: 'All Steel Regular Tagging Gun Replacement Needles',
+      image: 'images/products/94201.jpg',
+      type: 'accessories',
+      qty: '8',
+      price: '$4.35',
+    },
+    {
+      id: '94400',
+      name: 'GSSW Economy Regular Tagging Gun',
+      image: 'images/products/94400.jpg',
+      type: 'tool',
+      qty: '8',
+      price: '$170.35',
+    },
+    {
+      id: '94401',
+      name: 'Economy Regular Tagging Needles',
+      image: 'images/products/94401.jpg',
+      type: 'accessories',
+      qty: '2',
+      price: '$5.45',
+    },
+    {
+      id: '94202',
+      name: 'All Steel Regular Tagging Gun Needles Without Blades',
+      image: 'images/products/94202.jpg',
+      type: 'accessories',
+      qty: '3',
+      price: '$2.90',
+    },
+    {
+      id: '94113',
+      name: 'Regular 2 inch Clear Tagging Fasteners',
+      image: 'images/products/94113.jpg',
+      type: 'accessories',
+      qty: '11',
+      price: '$3.45',
+    },
+    {
+      id: '94104',
+      name: 'Regular 2 inch Clear Hook Tagging Fasteners',
+      image: 'images/products/94104.jpg',
+      type: 'accessories',
+      qty: '20',
+      price: '$8.00',
+    },
+    {
+      id: '94136',
+      name: 'Regular 2 inch Black Clear Tagging Fasteners',
+      image: 'images/products/94136.jpg',
+      type: 'accessories',
+      qty: '25',
+      price: '$9.99',
+    },
+    {
+      id: '94105',
+      name: 'Regular 3 inch Red Tagging Fasteners',
+      image: 'images/products/94105.jpg',
+      type: 'accessories',
+      qty: '29',
+      price: '$11.99',
     },
   ],
 };
