@@ -1,6 +1,6 @@
-import Layout from 'src/components/Layout';
+import Layout from '../src/components/Layout';
 import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
-import styles from 'styles/Home.module.css';
+import styles from '../styles/Home.module.css';
 
 export default function Continents({ continents }) {
   console.log('continents', continents);

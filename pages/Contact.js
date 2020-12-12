@@ -1,7 +1,7 @@
-import Layout from 'src/components/Layout';
+import Layout from '../src/components/Layout';
 import { useEffect, useRef } from 'react';
-import Input from 'src/components/Input';
-import styled from 'styled-components';
+import Input from '../src/components/Input';
+import styled from '../styled-components';
 
 function Contact() {
   const nameRef = useRef(null);

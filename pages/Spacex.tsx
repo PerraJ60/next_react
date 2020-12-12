@@ -1,5 +1,5 @@
 import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
-import Layout from 'src/components/Layout';
+import Layout from '../src/components/Layout';
 import styles from '../styles/Home.module.css';
 
 export default function Spacex({ launches }) {

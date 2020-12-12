@@ -1,7 +1,7 @@
 import { useQuery, gql } from '@apollo/client';
-import { initializeApollo } from 'src/apolloClient';
-import Layout from 'src/components/Layout';
-import styles from 'styles/Home.module.css';
+import { initializeApollo } from '../src/apolloClient';
+import Layout from '../src/components/Layout';
+import styles from '../styles/Home.module.css';
 
 const prodQuery = gql`
   query prodQuery {

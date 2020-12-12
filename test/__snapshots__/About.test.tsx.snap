@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without error 1`] = `
+<header
+  className="header"
+>
+  <h1>
+    Per Johansson
+  </h1>
+  <h2>
+    loading...
+  </h2>
+</header>
+`;

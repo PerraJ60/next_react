@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import About from 'pages/About';
-import Contact from 'pages/Contact';
-import styles from 'styles/Home.module.css';
+import About from '../../pages/About';
+import Contact from '../../pages/Contact';
+import styles from '../../styles/Home.module.css';
 
 function Nav() {
   return (
