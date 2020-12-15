@@ -3,9 +3,13 @@ export default function Home() {
   return (
     <div>
       <Layout>
+        <h2>Home</h2>
+        <br />
         <h5>
-          This is an app developed in React, NextJS (Create-Next-App),\n using
-          GraphQL, Apollo and Nexus.\n Typescript is also used, as well as Yarn.
+          <p>
+            This is an app developed in React, NextJS (Create-Next-App), using
+            GraphQL, Apollo and Nexus. Typescript is also used.
+          </p>
         </h5>
       </Layout>
     </div>
