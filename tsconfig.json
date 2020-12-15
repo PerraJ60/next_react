@@ -20,7 +20,9 @@
     "**/*.ts",
     "**/*.tsx",
     "pages/Contact.js",
-    "jest.config.js"
+    "jest.config.js",
+    "pages/Login.ts",
+    "test/Login.test.js"
   ],
   "exclude": ["node_modules", ".next"]
 }

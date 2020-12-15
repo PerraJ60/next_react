@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without error 1`] = `
+<div>
+  <nav>
+    <ul
+      className="header"
+    >
+      <li>
+        <a
+          href="/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          href="/Products"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          Products
+        </a>
+      </li>
+      <li>
+        <a
+          href="/Continents"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          Continents
+        </a>
+      </li>
+      <li>
+        <a
+          href="/Spacex"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          Space travels
+        </a>
+      </li>
+      <li>
+        <a
+          href="/About"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          CV
+        </a>
+      </li>
+      <li>
+        <a
+          href="/Contact"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          Contact
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div
+    className="container"
+  >
+    <div
+      className="main"
+    >
+      <h1
+        className="title"
+      >
+        SpaceX Launches
+      </h1>
+      <p
+        className="description"
+      >
+        <a
+          href="https://www.spacex.com/launches/"
+        >
+          Latest launches
+        </a>
+         from SpaceX
+      </p>
+      <div
+        className="grid"
+      >
+        <a
+          className="card"
+        >
+          <h3 />
+          <p>
+            <strong>
+              Launch Date:
+            </strong>
+             
+            Invalid Date
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -3,7 +3,7 @@ import { initializeApollo } from '../src/apolloClient';
 import Layout from '../src/components/Layout';
 import styles from '../styles/Home.module.css';
 
-const prodQuery = gql`
+export const prodQuery = gql`
   query prodQuery {
     products {
       name
@@ -18,6 +18,13 @@ const prodQuery = gql`
 
 export default function Products() {
   const { data, error, loading } = useQuery(prodQuery);
+  if (error) {
+    return <span>Error... oops!</span>;
+  }
+
+  if (loading) {
+    return <h2>loading...</h2>;
+  }
   return (
     <Layout>
       <div className={styles.container}>

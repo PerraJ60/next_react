@@ -1,21 +1,19 @@
 import TestRenderer from 'react-test-renderer';
 import { render, cleanup } from '@testing-library/react';
 import { MockedProvider } from '@apollo/client/testing';
-//import About from 'pages/About';
-import About, { ResumeQuery } from '../pages/About';
+import '@testing-library/jest-dom/extend-expect';
+import Continents, { continentsQuery } from '../pages/Continents';
 
 afterEach(cleanup);
 
 const mocks = [
   {
     request: {
-      query: ResumeQuery,
+      query: continentsQuery,
       variables: {},
     },
     result: {
-      data: {
-        products: [],
-      },
+      data: [],
     },
   },
 ];
@@ -23,7 +21,7 @@ const mocks = [
 it('renders without error', () => {
   const component = TestRenderer.create(
     <MockedProvider mocks={mocks} addTypename={false}>
-      <About />
+      <Continents continents={mocks} />
     </MockedProvider>
   );
 

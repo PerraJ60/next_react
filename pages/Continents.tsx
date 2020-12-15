@@ -2,6 +2,14 @@ import Layout from '../src/components/Layout';
 import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
 import styles from '../styles/Home.module.css';
 
+export const continentsQuery = gql`
+  query GetContinents {
+    continents {
+      name
+      code
+    }
+  }
+`;
 export default function Continents({ continents }) {
   console.log('continents', continents);
   return (
@@ -35,14 +43,7 @@ export async function getStaticProps() {
   });
 
   const { data } = await client.query({
-    query: gql`
-      query GetContinents {
-        continents {
-          name
-          code
-        }
-      }
-    `,
+    query: continentsQuery,
   });
 
   return {

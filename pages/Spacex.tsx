@@ -1,6 +1,27 @@
-import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
+import { ApolloClient, InMemoryCache, useQuery, gql } from '@apollo/client';
 import Layout from '../src/components/Layout';
 import styles from '../styles/Home.module.css';
+
+export const launchesQuery = gql`
+  query GetLaunches {
+    launchesPast(limit: 10) {
+      id
+      mission_name
+      launch_date_local
+      launch_site {
+        site_name_long
+      }
+      links {
+        article_link
+
+        mission_patch
+      }
+      rocket {
+        rocket_name
+      }
+    }
+  }
+`;
 
 export default function Spacex({ launches }) {
   return (
@@ -15,11 +36,7 @@ export default function Spacex({ launches }) {
           <div className={styles.grid}>
             {launches.map((launch) => {
               return (
-                <a
-                  key={launch.id}
-                  href={launch.links.video_link}
-                  className={styles.card}
-                >
+                <a key={launch.id} className={styles.card}>
                   <h3>{launch.mission_name}</h3>
                   <p>
                     <strong>Launch Date:</strong>{' '}
@@ -44,26 +61,7 @@ export async function getStaticProps() {
   });
 
   const { data } = await client.query({
-    query: gql`
-      query GetLaunches {
-        launchesPast(limit: 10) {
-          id
-          mission_name
-          launch_date_local
-          launch_site {
-            site_name_long
-          }
-          links {
-            article_link
-            video_link
-            mission_patch
-          }
-          rocket {
-            rocket_name
-          }
-        }
-      }
-    `,
+    query: launchesQuery,
   });
 
   return {
